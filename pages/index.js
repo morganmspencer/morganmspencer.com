@@ -8,11 +8,11 @@ export default function Home({ posts }) {
   return (
     <>
       <MetaHead />
-      <div className="min-h-screen py-12 px-wrap flex items-center justify-center flex-col uppercase overflow-hidden relative bg-dark text-light">
-        <div className="absolute bottom-0 left-0 w-full h-full pattern-dots-md text-navy z-0 opacity-30" aria-hidden="true" />
+      <div className="full-height-header flex items-center justify-center flex-col uppercase overflow-hidden bg-dark text-light">
+        <div className="absolute bottom-0 left-0 w-full h-full pattern-cross-dots-md text-navy z-0 opacity-30" aria-hidden="true" />
         <div className="relative z-10 flex items-center flex-col">
           <ScrollAnimation animateIn="fadeInDown" animateOnce={true} delay={500}>
-            <img src="/images/uploads/profile.jpg" alt="Morgan Spencer" className="mb-6 h-52 w-52 shadow-lg rounded-full border-4 border-solid border-light" />
+            <img src="/images/uploads/profile.jpg" alt="Morgan Spencer" className="mb-6 h-36 w-36 md:h-48 md:w-48 shadow-lg rounded-full border-4 border-solid border-light" />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} delay={1000}>
             <h1 className="text-center">{blog.name}</h1>
