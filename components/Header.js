@@ -1,37 +1,28 @@
+import { useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { RiMenuFill } from 'react-icons/ri'
 const blog = require('nmbs.config.json')
 
 export default function Header() {
-  const router = useRouter()
-  const home = router.pathname === '/' ? true : false
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header role="banner" className="flex flex-col font-sans items-center justify-between md:flex-row">
-      <HomeLinkWrapper home={home} wrapper={children => <h1 className="text-base">{children}</h1>}>
-        <Link href="/">
-          <a className="font-bold">{blog.name}</a>
-        </Link>
-      </HomeLinkWrapper>
-      <nav role="navigation" aria-label="main navigation" className="mt-4 md:ml-4 md:mt-0">
-        <ul className="flex items-center">
-          <NavLink href="/categories" title={blog.categories.name} />
-          <NavLink href="/tags" title={blog.tags.name} />
-          <NavLink href="/authors" title={blog.authors.name} />
-        </ul>
+    <header role="banner" className="px-wrap py-3 absolute z-30 top-0 w-full bg-dark text-light flex font-sans font-bold items-center justify-between lowercase">
+      <Link href="/">
+        <a className="text-lg">Morgan</a>
+      </Link>
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="p-2 text-xl md:hidden"
+      >
+        <span className="sr-only">Toggle Menu</span>
+        <RiMenuFill />
+      </button>
+      <nav role="navigation" aria-label="main navigation" className={`${menuOpen ? 'block' : 'hidden'} items-center mt-4 md:flex md:ml-4 md:mt-0`}>
+        <Link href="/portfolio">Portfolio</Link>
+        <Link href="/learn">Learn</Link>
+        <Link href="/contact">Contact</Link>
       </nav>
     </header>
   )
-}
-
-function NavLink({ href, title }) {
-  return (
-    <li className="mx-2 md:ml-4 md:mx-0">
-      <Link href={href}>{title}</Link>
-    </li>
-  )
-}
-
-function HomeLinkWrapper ({home, wrapper, children}) {
-  return home ? wrapper(children) : children
 }
