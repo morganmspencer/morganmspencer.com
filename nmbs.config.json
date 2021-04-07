@@ -1,6 +1,6 @@
 {
-  "name": "Next Markdown Blog Starter",
-  "tagline": "This is the website tagline",
+  "name": "Morgan Spencer",
+  "tagline": "Full Stack Web Developer",
   "twitter": "morganmspencer",
   "posts": {
     "name": "Posts",
@@ -14,11 +14,7 @@
     "name": "Tags",
     "name_singular": "Tag"
   },
-  "authors": {
-    "name": "Authors",
-    "name_singular": "Author"
-  },
   "seo": {
-    "sep": " | "
+    "sep": " • "
   }
 }

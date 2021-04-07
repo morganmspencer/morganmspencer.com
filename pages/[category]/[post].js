@@ -1,20 +1,15 @@
 import Link from 'next/link'
 import { getPosts, getPostBySlug } from 'pages/api/posts'
 import { getCategoryBySlug } from 'pages/api/categories'
-import { getAuthorBySlug } from 'pages/api/authors'
 import { getTagsBySlugs } from 'pages/api/tags'
 import MetaHead from 'components/MetaHead'
 const blog = require('nmbs.config.json')
 
-export default function Post({ post, category, author, tags }) {
+export default function Post({ post, category, tags }) {
   return (
     <>
       <MetaHead title={`${post.title}`} />
       <h1>{post.title}</h1>
-      <p>
-        <span>by: </span>
-        <Link href={`/authors/${author.slug}`}>{author.title}</Link>
-      </p>
       <p>
         <span>{blog.categories.name_singular}: </span>
         <Link href={`/${category.slug}`}>{category.title}</Link>
@@ -52,7 +47,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const category = getCategoryBySlug(params.category)
   const post = getPostBySlug(params.post)
-  const author = getAuthorBySlug(post.author)
   const tags = getTagsBySlugs(post.tags)
 
   return {
@@ -62,9 +56,6 @@ export async function getStaticProps({ params }) {
       },
       category: {
         ...category,
-      },
-      author: {
-        ...author
       },
       tags: tags,
     },

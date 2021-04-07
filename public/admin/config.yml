@@ -22,13 +22,6 @@ collections:
         format: 'YYYY-MM-DD-HH-mm'
         date_format: 'dddd, MMMM D, YYYY'
         time_format: 'h:mm a'
-      - name: 'author'
-        label: 'Author'
-        widget: 'relation'
-        collection: 'authors'
-        search_fields: ['title', 'slug']
-        value_field: '{{slug}}'
-        display_fields: ['title', 'slug']
       - name: 'category'
         label: 'Category'
         widget: 'relation'
@@ -77,26 +70,5 @@ collections:
         widget: 'string'
       - name: 'body'
         label: 'Body'
-        widget: 'markdown'
-  - name: 'authors'
-    label: 'Authors'
-    label_singular: 'Author'
-    folder: '_content/authors'
-    create: true
-    delete: false
-    preview_path: 'authors/{{slug}}'
-    fields:
-      - name: 'title'
-        label: 'Name'
-        widget: 'string'
-      - name: 'twitter'
-        required: false
-        label: 'Twitter Handle'
-      - name: 'short_bio'
-        required: false
-        label: 'Short Bio'
-        widget: 'text'
-      - name: 'body'
-        label: 'Bio'
         widget: 'markdown'
 

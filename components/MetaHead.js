@@ -20,8 +20,6 @@ export default function MetaHead(props) {
 
   const image = props.image ? props.image : hostname + '/images/social-card.png'
 
-  const authorTwitter = props.authorTwitter !== undefined ? props.authorTwitter : blog.twitter
-
   return (
     <Head>
 			<title>{metaTitle}</title>
@@ -49,7 +47,7 @@ export default function MetaHead(props) {
       <meta property="og:image:alt" content={metaTitle} />
 			<meta name="twitter:image:alt" content={metaTitle} />
 
-      <meta name="twitter:creator" content={`@` + authorTwitter} />
+      <meta name="twitter:creator" content={`@` + blog.twitter} />
 			<meta name="twitter:site" content={blog.twitter} />
 			<meta name="twitter:card" content="summary_large_image" />
     </Head>
