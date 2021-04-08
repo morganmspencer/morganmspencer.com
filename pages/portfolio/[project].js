@@ -7,7 +7,7 @@ import HeaderBanner from 'components/HeaderBanner'
 import ScrollAnimation from 'react-animate-on-scroll'
 const blog = require('nmbs.config.json')
 
-export default function Post({ project, types }) {
+export default function Project({ project, types }) {
 
   if (!project.published) {
     return <DefaultErrorPage statusCode={404} />

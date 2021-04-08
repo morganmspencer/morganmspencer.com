@@ -1,26 +1,46 @@
 import Link from 'next/link'
-import { getProjects } from 'pages/api/projects'
+import { getProjectTypes, getProjectTypeBySlug } from 'pages/api/project-types'
 import MetaHead from 'components/MetaHead'
-import ProjectItem from 'components/ProjectItem'
+import HeaderBanner from 'components/HeaderBanner'
 import ScrollAnimation from 'react-animate-on-scroll'
+const blog = require('nmbs.config.json')
 
-export default function Type({ projects }) {
+export default function Type({ types }) {
+
   return (
     <>
-      <MetaHead />
-      <header>
-        <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
-          <h1 className="heading-underline">Portfolio</h1>
+      <MetaHead title="Types" />
+      <HeaderBanner>
+        <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} delay={300}>
+          <h1 className="mb-2">Types</h1>
         </ScrollAnimation>
-      </header>
+      </HeaderBanner>
     </>
+
   )
 }
 
-export async function getStaticProps() {
-  const projects = getProjects()
+export async function getStaticPaths() {
+  const types = getProjectTypes()
 
   return {
-    props: { projects },
+    paths: types.map((type) => {
+      return {
+        params: {
+          type: type.slug,
+        },
+      }
+    }),
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params }) {
+  const types = getProjectTypeBySlug(params.type)
+
+  return {
+    props: {
+      types: types,
+    },
   }
 }
