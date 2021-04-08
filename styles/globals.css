@@ -264,5 +264,16 @@ header[role="banner"] nav a {
 @tailwind utilities;
 
 .full-height-header {
-  @apply min-h-screen transform -translate-y-12 py-12 px-wrap relative z-0;
+  @apply min-h-screen -mt-12 py-12 px-wrap relative z-0;
+}
+
+.heading-underline {
+  @apply relative uppercase mb-8;
+}
+
+.heading-underline::after {
+  content: '';
+  left: 3px;
+  top: calc(100% + 2px);
+  @apply top-full absolute w-8 md:w-12 h-1 bg-lavender;
 }
