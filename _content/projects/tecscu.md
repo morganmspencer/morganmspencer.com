@@ -5,8 +5,8 @@ date: 2019-04-01-10-00
 types:
   - web-design
 excerpt: A national council for higher education teaching professionals.
-color: '#656EF9'
-thumbnail: ''
+color: "#656EF9"
+thumbnail: /images/projects/tecscu/tecscu-site-mockup.jpg
 ---
 
 ## Goals and Objectives
