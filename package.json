@@ -11,6 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
     "animate.css": "^4.1.1",
     "gray-matter": "^4.0.2",
     "markdown-it": "^12.0.4",

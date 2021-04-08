@@ -33,7 +33,12 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ['group-hover', 'group-focus'],
+      padding: ['group-hover', 'group-focus'],
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
