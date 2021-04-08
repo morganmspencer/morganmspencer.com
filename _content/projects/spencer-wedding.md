@@ -8,7 +8,7 @@ types:
   - print-design
 excerpt: A Charleston, South Carolina wedding with accompanying print design and website.
 color: '#480040'
-featured-image: ''
+thumbnail: ''
 ---
 
 ## Goals and Objectives

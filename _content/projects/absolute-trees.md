@@ -6,5 +6,5 @@ types:
   - web-design
 excerpt: Local Charleston tree company
 color: '#537F59'
-featured-image: ''
+thumbnail: ''
 ---

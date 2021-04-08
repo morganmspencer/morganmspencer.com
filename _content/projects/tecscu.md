@@ -6,7 +6,7 @@ types:
   - web-design
 excerpt: A national council for higher education teaching professionals.
 color: '#656EF9'
-featured-image: ''
+thumbnail: ''
 ---
 
 ## Goals and Objectives

@@ -7,7 +7,7 @@ types:
   - branding
 excerpt: A New Jersey creative who specializes in a variety of artistic avenues, such as photography and illustration.
 color: '#111111'
-featured-image: ''
+thumbnail: ''
 ---
 
 ## Goals and Objectives

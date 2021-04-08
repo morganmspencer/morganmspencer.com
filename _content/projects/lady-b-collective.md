@@ -7,7 +7,7 @@ types:
   - web-design
 excerpt: A lifestyle blog and shop that focuses on women’s mental health and empowerment.
 color: '#D84396'
-featured-image: ''
+thumbnail: ''
 ---
 
 ## Goals and Objectives

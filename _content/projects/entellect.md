@@ -6,5 +6,5 @@ types:
   - web-design
 excerpt: A full life-cycle business development company
 color: '#182B3E'
-featured-image: ''
+thumbnail: ''
 ---
