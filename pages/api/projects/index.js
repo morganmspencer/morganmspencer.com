@@ -44,8 +44,14 @@ export function getProjects(fields = []) {
   const content = slugs
     .map((slug) => getProjectBySlug(slug, fields))
     .sort((a, b) => (
-      a.title > b.title ? 1 : -1
+      a.date < b.date ? 1 : -1
     ))
+
+  content.forEach((project, i) => {
+    if (!project.published) {
+      content.splice(i, 1)
+    }
+  })
 
   return content
 }
