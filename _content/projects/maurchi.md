@@ -4,9 +4,10 @@ published: true
 date: 2020-05-01-10-00
 types:
   - web-design
-excerpt: A healer who uses a combination of ancient energy techniques and modern science to empower others to lead dynamic lives.
-color: '#5D2D91'
-thumbnail: ''
+excerpt: A healer who uses a combination of ancient energy techniques and modern
+  science to empower others to lead dynamic lives.
+color: "#5D2D91"
+thumbnail: /images/projects/maurchi/maurchi-website-mockup.jpg
 ---
 
 ## Goals and Objectives
