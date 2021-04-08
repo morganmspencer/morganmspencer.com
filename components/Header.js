@@ -14,23 +14,23 @@ export default function Header() {
         </Link>
       </ScrollAnimation>
 
-      <ScrollAnimation animateIn="fadeInRight" offset={0} animateOnce={true}>
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="p-2 text-xl md:hidden"
-        >
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="p-2 text-xl md:hidden"
+      >
+        <ScrollAnimation animateIn="fadeInRight" offset={0} animateOnce={true}>
           <span className="sr-only">Toggle Menu</span>
           <RiMenuFill />
-        </button>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </button>
 
-      <ScrollAnimation animateIn="fadeInRight" offset={0} animateOnce={true}>
-        <nav role="navigation" aria-label="main navigation" className={`${menuOpen ? 'block' : 'hidden'} items-center mt-4 md:flex md:ml-4 md:mt-0`}>
+      <nav role="navigation" aria-label="main navigation" className={`${menuOpen ? 'flex' : 'hidden'} flex-col bg-dark items-center absolute top-full right-0 md:bg-transparent md:flex md:ml-4 md:static md:flex-row`}>
+        <ScrollAnimation animateIn="fadeInRight" offset={0} animateOnce={true}>
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/learn">Learn</Link>
           <Link href="/contact">Contact</Link>
-        </nav>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </nav>
     </header>
   )
 }
