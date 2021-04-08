@@ -5,9 +5,10 @@ date: 2019-05-01-10-00
 types:
   - branding
   - web-design
-excerpt: A lifestyle blog and shop that focuses on women’s mental health and empowerment.
-color: '#D84396'
-thumbnail: ''
+excerpt: A lifestyle blog and shop that focuses on women’s mental health and
+  empowerment.
+color: "#D84396"
+thumbnail: /images/projects/lady-b-collective/ladyb-site-mockup.jpg
 ---
 
 ## Goals and Objectives
