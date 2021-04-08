@@ -5,9 +5,10 @@ date: 2018-04-01-10-00
 types:
   - web-design
   - branding
-excerpt: A New Jersey creative who specializes in a variety of artistic avenues, such as photography and illustration.
-color: '#111111'
-thumbnail: ''
+excerpt: A New Jersey creative who specializes in a variety of artistic avenues,
+  such as photography and illustration.
+color: "#111111"
+thumbnail: /images/projects/kate-haus-art/katehaus-site-mockup.jpg
 ---
 
 ## Goals and Objectives
