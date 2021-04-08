@@ -9,7 +9,7 @@ export default function Home({ posts }) {
       <ul className="min-h-screen">
         {posts.map(post => (
           <li key={post.slug}>
-            <Link href={`/${post.category}/${post.slug}`}>{post.title}</Link>
+            <Link href={`/learn/${post.category}/${post.slug}`}>{post.title}</Link>
           </li>
         ))}
       </ul>

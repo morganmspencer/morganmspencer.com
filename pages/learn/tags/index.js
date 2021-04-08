@@ -11,7 +11,7 @@ export default function Tags({ tags }) {
       <ul>
         {tags.map(tag => (
           <li key={tag.slug}>
-            <Link href={`/tags/${tag.slug}`}>{tag.title}</Link>
+            <Link href={`/learn/tags/${tag.slug}`}>{tag.title}</Link>
           </li>
         ))}
       </ul>

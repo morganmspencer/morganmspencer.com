@@ -12,14 +12,14 @@ export default function Post({ post, category, tags }) {
       <h1>{post.title}</h1>
       <p>
         <span>{blog.categories.name_singular}: </span>
-        <Link href={`/${category.slug}`}>{category.title}</Link>
+        <Link href={`/learn/${category.slug}`}>{category.title}</Link>
       </p>
       <p>
         <span>
           {tags.length > 1 ? blog.tags.name : blog.tags.name_singular}:
         </span>
         {tags.map(tag => (
-          <Link href={`/tags/${tag.slug}`} key={tag.slug}>{tag.title}</Link>
+          <Link href={`/learn/tags/${tag.slug}`} key={tag.slug}>{tag.title}</Link>
         ))}
       </p>
       <div dangerouslySetInnerHTML={{__html: post.content}} />

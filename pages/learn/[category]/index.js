@@ -14,7 +14,7 @@ export default function Category({ category, posts }) {
       <ul>
         {posts.map(post => (
           <li key={post.slug}>
-            <Link href={`/${category.slug}/${post.slug}`}>{post.title}</Link>
+            <Link href={`/learn/${category.slug}/${post.slug}`}>{post.title}</Link>
           </li>
         ))}
       </ul>
