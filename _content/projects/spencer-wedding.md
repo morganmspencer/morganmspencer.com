@@ -6,9 +6,10 @@ types:
   - web-design
   - branding
   - print-design
-excerpt: A Charleston, South Carolina wedding with accompanying print design and website.
-color: '#480040'
-thumbnail: ''
+excerpt: A Charleston, South Carolina wedding with accompanying print design and
+  website.
+color: "#480040"
+thumbnail: /images/projects/spencer-wedding/tara-and-morgan-mockup.jpg
 ---
 
 ## Goals and Objectives
