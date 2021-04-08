@@ -110,7 +110,7 @@ collections:
         label: 'Featured Image'
         widget: 'image'
         allow_multiple: false
-        media_folder: '/images/projects/{{slug}}'
+        media_folder: '/public/images/projects/{{slug}}'
       - name: 'body'
         label: 'Body'
         widget: 'markdown'

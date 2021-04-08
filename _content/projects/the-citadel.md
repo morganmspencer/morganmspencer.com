@@ -6,5 +6,5 @@ types:
   - web-design
 excerpt: The Military College of South Carolina
 color: '#3975b7'
-thumbnail: ''
+thumbnail: /images/projects/the-citadel/citadel-mockup.jpg
 ---
