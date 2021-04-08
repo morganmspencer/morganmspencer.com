@@ -43,9 +43,8 @@ export function getCategories(fields = []) {
 
   const content = slugs
     .map((slug) => getCategoryBySlug(slug, fields))
-  // sort content by date in descending order
-    .sort((content1, content2) => (
-      content1.title > content2.title ? '-1' : '1'
+    .sort((a, b) => (
+      a.title > b.title ? 1 : -1
     ))
 
   return content

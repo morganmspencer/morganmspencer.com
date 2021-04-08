@@ -7,8 +7,8 @@ export function getPostsByCategory(category, fields = []) {
   const content = slugs
     .map((slug) => getPostBySlug(slug, fields))
   // sort content by date in descending order
-    .sort((content1, content2) => (
-      content1.publish_date > content2.publish_date ? '-1' : '1'
+    .sort((a, b) => (
+      a.published_at < b.published_at ? 1 : -1
     ))
 
 

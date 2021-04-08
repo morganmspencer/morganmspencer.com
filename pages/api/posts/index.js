@@ -43,9 +43,8 @@ export function getPosts(fields = []) {
 
   const content = slugs
     .map((slug) => getPostBySlug(slug, fields))
-  // sort content by date in descending order
-    .sort((content1, content2) => (
-      content1.published_at > content2.published_at ? '-1' : '1'
+    .sort((a, b) => (
+      a.published_at < b.published_at ? 1 : -1
     ))
 
   return content

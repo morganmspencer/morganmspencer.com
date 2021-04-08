@@ -3,25 +3,12 @@ import { join } from 'path'
 import matter from 'gray-matter'
 var md = require('markdown-it')()
 
-export const tagsDirectory = join(process.cwd(), '_content/tags')
+export const educationsDirectory = join(process.cwd(), '_content/educations')
 
-export function getTagsBySlugs(slugs = [], fields = []) {
-  var tags = []
-
-  if (slugs !== undefined && slugs.length) {
-    slugs.forEach((slug) => {
-      const tag = getTagBySlug(slug, fields)
-      tags.push(tag)
-    })
-  }
-
-  return tags
-}
-
-export function getTagBySlug(slug, fields) {
+export function getEducationBySlug(slug, fields) {
   const realSlug = slug.replace(/\.md$/, '')
 
-  const fullPath = join(tagsDirectory, `${realSlug}.md`)
+  const fullPath = join(educationsDirectory, `${realSlug}.md`)
 
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
@@ -47,17 +34,17 @@ export function getTagBySlug(slug, fields) {
   return theData
 }
 
-export function getTags(fields = []) {
-  if (!fs.existsSync(tagsDirectory)) {
+export function getEducations(fields = []) {
+  if (!fs.existsSync(educationsDirectory)) {
     return []
   }
 
-  const slugs = fs.readdirSync(tagsDirectory)
+  const slugs = fs.readdirSync(educationsDirectory)
 
   const content = slugs
-    .map((slug) => getTagBySlug(slug, fields))
+    .map((slug) => getEducationBySlug(slug, fields))
     .sort((a, b) => (
-      a.title > b.title ? 1 : -1
+      a.start_year < b.start_year ? 1 : -1
     ))
 
   return content
@@ -77,6 +64,6 @@ export default async function handler(req, res) {
     fields = []
   }
 
-  const content = getTags(fields)
+  const content = getEducations(fields)
   res.status(200).json(content)
 }
