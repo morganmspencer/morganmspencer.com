@@ -18,7 +18,7 @@ excerpt: These are the top 10 tools, services and software that I use to run my
 ---
 I go through the top 10 tools, services and software that I use to run my design business, Spencer Creative Co. Leave me a message on other tools you use!
 
-Listen to the [podcast episode](https://anchor.fm/bddpodcast/episodes/7--The-Tools-and-Services-I-Use-for-My-Business-e4d3vn/a-ah8ro9).
+Listen to the [podcast episode](https://open.spotify.com/episode/3yKTF1YLsAIR4plkwhST2K?si=Jp6PmscOTBezX-s8C-hV2Q) to find out more.
 
 ## Links
 
