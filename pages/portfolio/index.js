@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 export default function Portfolio({ projects }) {
   return (
     <>
-      <MetaHead />
+      <MetaHead title="Portfolio" />
       <div className="py-24 px-wrap relative">
         <div className="absolute top-0 left-0 w-full h-full pattern-cross-dots-md text-tan z-0 opacity-30" aria-hidden="true" />
         <div className="relative z-10">

@@ -23,9 +23,7 @@ export default function Project({ project, types }) {
             <ScrollAnimation animateIn="fadeInDown" animateOnce={true} delay={600}>
               <div className="flex items-center gap-4 uppercase text-sm font-semibold mb-1">
                 {types.map(type => (
-                  <Link href={`/portfolio/types/${type.slug}`} key={type.slug}>
-                    <a className="no-underline">{type.title}</a>
-                  </Link>
+                  <span>{type.title}</span>
                 ))}
               </div>
             </ScrollAnimation>
@@ -41,8 +39,9 @@ export default function Project({ project, types }) {
           </Window>
         </div>
       </HeaderBanner>
-      <div className="px-wrap py-24">
-        <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
+      <div className="px-wrap py-24 relative">
+        <div className="absolute top-0 left-0 w-full h-full pattern-cross-dots-md text-tan z-0 opacity-30" aria-hidden="true" />
+        <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} className="relative z-10">
           <div className="entry-content" dangerouslySetInnerHTML={{__html: project.content}} />
         </ScrollAnimation>
       </div>
