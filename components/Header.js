@@ -9,8 +9,6 @@ export default function Header() {
   const router = useRouter()
   const pathname = router.pathname
 
-  console.log(pathname)
-
   const dark = ['/portfolio/[project]', '/contact']
 
   return (
@@ -34,7 +32,7 @@ export default function Header() {
         </ScrollAnimation>
       </button>
 
-      <nav role="navigation" aria-label="main navigation" className={`${menuOpen ? 'block' : 'hidden'} w-full h-screen p-12 fixed bg-dark top-0 right-0 md:block md:bg-transparent md:ml-4 md:static md:w-auto md:h-auto md:p-0`}>
+      <nav role="navigation" aria-label="main navigation" className={`${menuOpen ? 'block' : 'hidden'} text-light w-full h-screen p-12 fixed bg-dark top-0 right-0 md:block md:bg-transparent md:ml-4 md:static md:w-auto md:h-auto md:p-0 md:text-current`}>
         <button
           className="absolute top-0 right-0 py-2 px-4 block md:hidden"
           onClick={() => setMenuOpen(false)}
