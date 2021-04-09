@@ -10,9 +10,9 @@ thumbnail: /public/images/posts/4-tips-to-make-your-freelance-business-seem-bigg
 excerpt: Use these four easy tips to make your small freelance business more
   professional, efficient and gain more clients quickly.
 ---
-Listen to the [related podcast episode](https://open.spotify.com/episode/4DI6k2GiakTgGxMKCyr2nD?si=z1E-bnoWRoyNLhovgv1ZNQ) for this post
+*Listen to the [related podcast episode](https://open.spotify.com/episode/4DI6k2GiakTgGxMKCyr2nD?si=z1E-bnoWRoyNLhovgv1ZNQ) for this post.*
 
----
+- - -
 
 So, you’re a freelancer, either just starting out or you’ve been at it for a while. What you’ll come to notice, if you haven’t already, is that some clients may be turned off by hiring a solo entrepreneur. This can be for several reasons, including the perception that one person can’t do all of the work that the client requires (usually a wrong thought) or that you aren’t as reliable as a firm (also not necessarily true).
 
