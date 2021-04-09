@@ -264,7 +264,7 @@ header[role="banner"] nav a {
 @tailwind utilities;
 
 .full-height-header {
-  @apply min-h-screen -mt-12 py-12 px-wrap relative z-0;
+  @apply min-h-screen py-12 px-wrap relative z-0;
 }
 
 .heading-underline {
@@ -276,4 +276,20 @@ header[role="banner"] nav a {
   left: 3px;
   top: calc(100% + 2px);
   @apply top-full absolute w-8 md:w-12 h-1 bg-lavender;
+}
+
+.entry-content {
+  @apply max-w-2xl;
+}
+
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+  @apply mb-4;
+}
+
+.entry-content p {
+  @apply text-xl leading-snug mb-4;
 }
