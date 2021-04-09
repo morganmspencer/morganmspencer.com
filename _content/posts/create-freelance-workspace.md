@@ -8,7 +8,7 @@ thumbnail: https://mk0creativecachbk87k.kinstacdn.com/wp-content/uploads/sites/2
 excerpt: A freelancer needs a workspace that fosters an environment of
   productivity and creativity. Learn how to make yours.
 ---
-Listen to the [related podcast episode](https://open.spotify.com/episode/0kps7ENLspygKnJqncCyEl?si=EMaZefxIQcqPaS-q9u_V_A) for this post
+*Listen to the [related podcast episode](https://open.spotify.com/episode/0kps7ENLspygKnJqncCyEl?si=EMaZefxIQcqPaS-q9u_V_A) for this post.*
 
 - - -
 
