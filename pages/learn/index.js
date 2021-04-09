@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import { getPosts } from 'pages/api/posts'
 import MetaHead from 'components/MetaHead'
+import { shuffle } from 'lib/helpers'
 
-export default function Home({ posts }) {
+export default function Posts({ posts }) {
   return (
     <>
       <MetaHead />
       <ul className="min-h-screen">
-        {posts.map(post => (
+        {shuffle(posts).map(post => (
           <li key={post.slug}>
             <Link href={`/learn/${post.category}/${post.slug}`}>{post.title}</Link>
           </li>
