@@ -6,19 +6,19 @@ const blog = require('nmbs.config.json')
 
 export default function Category({ category, posts }) {
   return (
-    <article>
+    <>
       <MetaHead
         title={`${category.title}${blog.seo.sep}${blog.categories.name}`}
       />
       <h1>{category.title}</h1>
-      <ul>
+      <div>
         {posts.map(post => (
           <li key={post.slug}>
             <Link href={`/learn/${category.slug}/${post.slug}`}>{post.title}</Link>
           </li>
         ))}
-      </ul>
-    </article>
+      </div>
+    </>
   )
 }
 
