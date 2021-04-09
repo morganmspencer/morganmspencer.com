@@ -6,7 +6,7 @@ const blog = require('nmbs.config.json')
 export default function Categories({ categories }) {
   return (
     <>
-      <MetaHead title={`${blog.categories.name}`} />
+      <MetaHead title={blog.categories.name} />
       <h1>{blog.categories.name}</h1>
       <ul>
         {categories.map(category => (

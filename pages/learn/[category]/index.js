@@ -2,21 +2,26 @@ import Link from 'next/link'
 import { getPostsByCategory } from 'pages/api/categories/[category]/posts'
 import { getCategories, getCategoryBySlug } from 'pages/api/categories'
 import MetaHead from 'components/MetaHead'
+import PostItem from 'components/PostItem'
+import ScrollAnimation from 'react-animate-on-scroll'
 const blog = require('nmbs.config.json')
 
 export default function Category({ category, posts }) {
   return (
     <>
-      <MetaHead
-        title={`${category.title}${blog.seo.sep}${blog.categories.name}`}
-      />
-      <h1>{category.title}</h1>
-      <div>
-        {posts.map(post => (
-          <li key={post.slug}>
-            <Link href={`/learn/${category.slug}/${post.slug}`}>{post.title}</Link>
-          </li>
-        ))}
+      <div className="py-24 px-wrap relative">
+        <div className="absolute top-0 left-0 w-full h-full pattern-cross-dots-md text-tan z-0 opacity-30" aria-hidden="true" />
+        <MetaHead title={`${category.title}${blog.seo.sep}Categories`} />
+        <div className="relative z-10">
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={0}>
+            <h1 className="heading-underline">{category.title}</h1>
+          </ScrollAnimation>
+          <div className="grid gap-8 md:gap-12 md:grid-cols-2 lg:grid-cols-3">
+            {posts.map(post => (
+              <PostItem post={post} key={post.slug} />
+            ))}
+          </div>
+        </div>
       </div>
     </>
   )
