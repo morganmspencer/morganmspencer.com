@@ -8,14 +8,14 @@ const blog = require('nmbs.config.json')
 export default function Type({ types }) {
 
   return (
-    <>
+    <article>
       <MetaHead title="Types" />
       <HeaderBanner>
         <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} delay={300}>
           <h1 className="mb-2">Types</h1>
         </ScrollAnimation>
       </HeaderBanner>
-    </>
+    </article>
 
   )
 }

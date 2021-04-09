@@ -12,7 +12,7 @@ export default function Portfolio({ projects }) {
         <div className="absolute top-0 left-0 w-full h-full pattern-cross-dots-md text-tan z-0 opacity-30" aria-hidden="true" />
         <div className="relative z-10">
           <header>
-            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
+            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300} offset={0}>
               <h1 className="heading-underline">Portfolio</h1>
             </ScrollAnimation>
           </header>
