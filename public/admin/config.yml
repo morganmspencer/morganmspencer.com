@@ -116,6 +116,16 @@ collections:
         widget: 'image'
         allow_multiple: false
         media_folder: '/public/images/projects/{{slug}}'
+      - name: 'windows'
+        label: 'Windows'
+        widget: 'image'
+        required: false
+        media_folder: '/public/images/projects/{{slug}}'
+      - name: 'images'
+        label: 'Images'
+        widget: 'image'
+        required: false
+        media_folder: '/public/images/projects/{{slug}}'
       - name: 'body'
         label: 'Body'
         widget: 'markdown'
