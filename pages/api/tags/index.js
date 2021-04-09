@@ -57,7 +57,7 @@ export function getTags(fields = []) {
   const content = slugs
     .map((slug) => getTagBySlug(slug, fields))
     .sort((a, b) => (
-      a.title > b.title ? 1 : -1
+      a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1
     ))
 
   return content
