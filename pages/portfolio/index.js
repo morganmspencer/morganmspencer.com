@@ -18,7 +18,7 @@ export default function Portfolio({ projects }) {
           </header>
           <section className="grid lg:grid-cols-2 gap-12 relative z-10 mt-12">
             {projects.map((project, i) => (
-              <ScrollAnimation key={i} animateIn={i % 2 == 0 ? 'fadeInLeft' : 'fadeInRight'} animateOnce={true} delay={i % 2 == 0 ? 300 : 600}>
+              <ScrollAnimation key={i} animateIn={i % 2 == 0 ? 'fadeInLeft' : 'fadeInRight'} animateOnce={true} delay={i % 2 == 0 ? 300 : 600} offset={0}>
                 <ProjectItem project={project} />
               </ScrollAnimation>
             ))}

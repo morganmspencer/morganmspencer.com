@@ -6,7 +6,7 @@ import { getProjectTypes } from 'pages/api/project-types'
 import MetaHead from 'components/MetaHead'
 import ProjectItem from 'components/ProjectItem'
 import ScrollAnimation from 'react-animate-on-scroll'
-import { RiArrowRightLine, RiTwitterFill, RiGithubFill } from 'react-icons/ri'
+import { RiArrowRightLine, RiTwitterFill, RiGithubFill, RiLinkedinFill } from 'react-icons/ri'
 const blog = require('nmbs.config.json')
 
 export default function Home({ experiences, educations, projects, types }) {
@@ -45,7 +45,7 @@ export default function Home({ experiences, educations, projects, types }) {
           </div>
           <div className="grid lg:grid-cols-2 gap-y-8 gap-x-12">
             {projects.slice(0,2).map((project, i) => (
-              <ScrollAnimation key={i} animateIn={i % 2 == 0 ? 'fadeInLeft' : 'fadeInRight'} animateOnce={true} delay={i * 300}>
+              <ScrollAnimation key={i} animateIn={i % 2 == 0 ? 'fadeInLeft' : 'fadeInRight'} animateOnce={true} delay={i * 300} offset={0}>
                 <ProjectItem project={project} />
               </ScrollAnimation>
             ))}
@@ -67,9 +67,15 @@ export default function Home({ experiences, educations, projects, types }) {
                 </a>
               </ScrollAnimation>
               <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={600}>
-                <a href="https://github.com/morganmspencer" target="_blank" rel="noopener noreferrer" className="block text-3xl md:text-5xl">
+                <a href="https://github.com/morganmspencer" target="_blank" rel="noopener noreferrer" className="block text-3xl mr-3 md:text-5xl">
                   <RiGithubFill />
                   <span className="sr-only">GitHub</span>
+                </a>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={900}>
+                <a href="https://www.linkedin.com/in/morganmspencer/" target="_blank" rel="noopener noreferrer" className="block text-3xl md:text-5xl">
+                  <RiLinkedinFill />
+                  <span className="sr-only">LinkedIn</span>
                 </a>
               </ScrollAnimation>
             </div>
