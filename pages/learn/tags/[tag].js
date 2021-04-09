@@ -6,7 +6,7 @@ const blog = require('nmbs.config.json')
 
 export default function Tag({ tag, posts }) {
   return (
-    <>
+    <article>
       <MetaHead title={`${tag.title}${blog.seo.sep}${blog.tags.name}`} />
       <h1>{tag.title}</h1>
       <ul>
@@ -16,7 +16,7 @@ export default function Tag({ tag, posts }) {
           </li>
         ))}
       </ul>
-    </>
+    </article>
   )
 }
 

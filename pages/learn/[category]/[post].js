@@ -7,7 +7,7 @@ const blog = require('nmbs.config.json')
 
 export default function Post({ post, category, tags }) {
   return (
-    <>
+    <article>
       <MetaHead title={`${post.title}`} />
       <h1>{post.title}</h1>
       <p>
@@ -23,7 +23,7 @@ export default function Post({ post, category, tags }) {
         ))}
       </p>
       <div dangerouslySetInnerHTML={{__html: post.content}} />
-    </>
+    </article>
 
   )
 }

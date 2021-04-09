@@ -6,7 +6,7 @@ const blog = require('nmbs.config.json')
 
 export default function Category({ category, posts }) {
   return (
-    <>
+    <article>
       <MetaHead
         title={`${category.title}${blog.seo.sep}${blog.categories.name}`}
       />
@@ -18,7 +18,7 @@ export default function Category({ category, posts }) {
           </li>
         ))}
       </ul>
-    </>
+    </article>
   )
 }
 
