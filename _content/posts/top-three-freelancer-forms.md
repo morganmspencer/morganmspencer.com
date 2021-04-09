@@ -10,7 +10,7 @@ thumbnail: https://mk0creativecachbk87k.kinstacdn.com/wp-content/uploads/sites/2
 excerpt: Forms are a fast and efficient way to gather information from clients.
   Here's the three most important forms to use throughout your projects.
 ---
-*Listen to the [related podcast episode](https://morganmspencer.com/business/top-three-freelancer-forms/#podcast) for this post.*
+*Listen to the [related podcast episode](https://open.spotify.com/episode/4zTwpoqrbfwrrU9kdsvhLh?si=zr7eDapBQ6KqiC6m5Bfiuw) for this post.*
 
 - - -
 
