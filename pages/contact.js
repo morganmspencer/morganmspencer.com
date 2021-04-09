@@ -8,7 +8,7 @@ export default function Contact() {
       <MetaHead title="Contact" />
       <HeaderBanner>
         <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
-          <h1>Contact</h1>
+          <h1 className="heading-underline">Contact</h1>
         </ScrollAnimation>
       </HeaderBanner>
     </article>

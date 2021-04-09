@@ -30,15 +30,18 @@ export default function Home({ experiences, educations, projects, types }) {
       <section className="py-24 px-wrap min-h-screen-3/4 relative">
         <div className="absolute top-0 left-0 w-full h-full pattern-cross-dots-md text-tan z-0 opacity-30" aria-hidden="true" />
         <div className="relative z-10">
-          <div className="flex items-center justify-between">
-            <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+          <div className="flex flex-wrap items-center justify-between">
+            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
               <h2 className="heading-underline">Portfolio</h2>
             </ScrollAnimation>
-            <Link href="/portfolio">
-              <a className="text-xl flex items-center mb-8 font-bold">
-                View More <RiArrowRightLine />
-              </a>
-            </Link>
+
+            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
+              <Link href="/portfolio">
+                <a className="text-xl flex items-center mb-8 font-bold">
+                  View More <RiArrowRightLine />
+                </a>
+              </Link>
+            </ScrollAnimation>
           </div>
           <div className="grid lg:grid-cols-2 gap-y-8 gap-x-12">
             {projects.slice(0,2).map((project, i) => (
