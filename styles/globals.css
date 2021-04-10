@@ -206,7 +206,7 @@ body {
 }
 
 #__next {
-  @apply flex flex-col min-h-screen overflow-x-hidden;
+  @apply flex flex-col min-h-screen overflow-x-hidden relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
