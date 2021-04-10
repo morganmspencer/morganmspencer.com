@@ -121,11 +121,17 @@ collections:
         widget: 'image'
         required: false
         media_folder: '/public/images/projects/{{slug}}'
+        media_library:
+          config:
+            multiple: true
       - name: 'images'
         label: 'Images'
         widget: 'image'
         required: false
         media_folder: '/public/images/projects/{{slug}}'
+        media_library:
+          config:
+            multiple: true
       - name: 'body'
         label: 'Body'
         widget: 'markdown'
