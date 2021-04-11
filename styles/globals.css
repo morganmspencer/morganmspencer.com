@@ -279,7 +279,7 @@ header[role="banner"] nav a {
 }
 
 .entry-content {
-  @apply max-w-2xl;
+  @apply max-w-2xl mx-auto;
 }
 
 .entry-content h2,
@@ -292,4 +292,12 @@ header[role="banner"] nav a {
 
 .entry-content p {
   @apply text-xl leading-snug mb-4;
+}
+
+.entry-content ul {
+  @apply list-disc pl-4 mb-4;
+}
+
+.entry-content li {
+  @apply text-xl mb-2;
 }

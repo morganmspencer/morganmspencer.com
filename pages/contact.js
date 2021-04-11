@@ -63,8 +63,8 @@ export default function Contact() {
           <ContactItem icon={<RiMapPinLine />} title="Location">
             <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
               <p>
-                <a href="https://www.google.com/maps/place/Mt+Pleasant,+SC/" target="_blank" rel="noopener noreferrer">
-                  Mount Pleasant, South Carolina, US
+                <a href="https://www.google.com/maps/place/Charleston,+SC/" target="_blank" rel="noopener noreferrer">
+                  Charleston, South Carolina, US
                 </a>
               </p>
             </ScrollAnimation>
