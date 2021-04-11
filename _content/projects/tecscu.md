@@ -22,4 +22,4 @@ The website needed to be professional and not overly designed but also have a pl
 
 ## Technologies Used
 
-Weebly
+Weebly, Figma
