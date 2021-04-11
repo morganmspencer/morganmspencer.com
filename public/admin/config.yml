@@ -121,6 +121,7 @@ collections:
         widget: 'relation'
         collection: 'windows'
         multiple: true
+        required: false
         search_fields: ['title', 'slug']
         value_field: '{{slug}}'
         display_fields: ['title', 'slug']
@@ -129,6 +130,7 @@ collections:
         widget: 'relation'
         collection: 'project-images'
         multiple: true
+        required: false
         search_fields: ['title', 'slug']
         value_field: '{{slug}}'
         display_fields: ['title', 'slug']
@@ -214,6 +216,7 @@ collections:
       - name: 'body'
         label: 'Body'
         widget: 'markdown'
+        required: false
   - name: 'project-images'
     label: 'Project Images'
     label_singular: 'Project Image'
@@ -232,4 +235,4 @@ collections:
       - name: 'body'
         label: 'Body'
         widget: 'markdown'
-
+        required: false
