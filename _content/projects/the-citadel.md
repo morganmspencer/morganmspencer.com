@@ -10,6 +10,7 @@ thumbnail: /images/projects/the-citadel/citadel-mockup.jpg
 windows:
   - our-mighty-citadel
   - the-citadel-today
+  - the-citadel-brand-guidelines
 ---
 ## Background
 
