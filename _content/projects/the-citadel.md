@@ -10,8 +10,6 @@ thumbnail: /images/projects/the-citadel/citadel-mockup.jpg
 windows:
   - our-mighty-citadel
   - the-citadel-today
-images:
-  - sample-project-image
 ---
 ## Background
 

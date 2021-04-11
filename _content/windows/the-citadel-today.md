@@ -1,5 +1,4 @@
 ---
-title: The Citadel Today
-image: /public/images/windows/the-citadel-today/citadel-today.jpg
+title: The Citadel Today - College Newsroom
+image: /public/images/windows/citadel-today.jpg
 ---
-Newsroom

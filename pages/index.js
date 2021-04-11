@@ -16,7 +16,7 @@ export default function Home({ experiences, educations, projects, types }) {
       <section className="full-height-header flex items-center justify-center flex-col uppercase overflow-hidden bg-dark text-light">
         <div className="absolute top-0 left-0 w-full h-full pattern-cross-dots-md text-navy z-0 opacity-30" aria-hidden="true" />
         <div className="relative z-10 flex items-center flex-col">
-          <ScrollAnimation animateIn="fadeInDown" animateOnce={true} delay={500}>
+          <ScrollAnimation animateIn="fadeInDown" animateOnce={true} delay={500} offset={0}>
             <img src="/images/uploads/profile.jpg" alt="Morgan Spencer" className="mb-6 h-36 w-36 md:h-48 md:w-48 shadow-lg rounded-full border-4 border-solid border-light" />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} delay={1000}>
@@ -92,7 +92,7 @@ export default function Home({ experiences, educations, projects, types }) {
         </ScrollAnimation>
         <div className="grid md:grid-cols-2 gap-y-8 gap-x-12">
           {experiences.map((experience, i) => (
-            <ScrollAnimation key={i} animateIn={i % 2 == 0 ? 'fadeInLeft' : 'fadeInRight'} animateOnce={true} delay={i * 300}>
+            <ScrollAnimation key={i} animateIn={i % 2 == 0 ? 'fadeInLeft' : 'fadeInRight'} animateOnce={true} delay={i * 300} offset={0}>
               <p className="font-bold text-sm uppercase text-navy">{experience.start_year} - {experience.end_year ? experience.end_year : 'Present'}</p>
               <h3 className="h4">{experience.title}</h3>
               <p className="text-xl mb-3">{experience.company}</p>
@@ -106,7 +106,7 @@ export default function Home({ experiences, educations, projects, types }) {
         </ScrollAnimation>
         <div className="grid md:grid-cols-2 gap-y-8 gap-x-12">
           {educations.map((education, i) => (
-            <ScrollAnimation key={i} animateIn={i % 2 == 0 ? 'fadeInLeft' : 'fadeInRight'} animateOnce={true} delay={i * 300}>
+            <ScrollAnimation key={i} animateIn={i % 2 == 0 ? 'fadeInLeft' : 'fadeInRight'} animateOnce={true} delay={i * 300} offset={0}>
               <p className="font-bold text-sm uppercase text-navy">{education.start_year} - {education.end_year ? education.end_year : 'Present'}</p>
               <h3 className="h4">{education.title}</h3>
               <p className="text-xl mb-3">{education.college}</p>

@@ -10,6 +10,10 @@ excerpt: A Charleston, South Carolina wedding with accompanying print design and
   website.
 color: "#480040"
 thumbnail: /images/projects/spencer-wedding/tara-and-morgan-mockup.jpg
+images:
+  - spencer-wedding-prints-01
+  - spencer-wedding-prints-02
+  - spencer-wedding-prints-03
 ---
 
 ## Goals and Objectives
