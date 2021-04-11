@@ -116,7 +116,7 @@ collections:
       - name: 'images'
         label: 'Images'
         widget: 'relation'
-        collection: 'project-imges'
+        collection: 'project-images'
         multiple: true
         search_fields: ['title', 'slug']
         value_field: '{{slug}}'
