@@ -23,3 +23,7 @@ The client gave a specific style that she was looking for with this brand and we
 
 > “When I met with Morgan, he was very receptive of my thoughts and wants regarding the website. I wanted someone who was able to produce what I wanted, in a timely manner, but be flexible in the nature of the work. After speaking with him, I knew it would be a great fit.
 >I highly recommend Spencer Creative Co. for any projects. They are open-minded, efficient, easy to work with, and will get you the results you want.”
+
+## Technologies Used
+
+Shopify, Figma, Illustrator, Photoshop
