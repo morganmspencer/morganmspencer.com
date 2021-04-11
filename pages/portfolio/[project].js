@@ -2,6 +2,7 @@ import Link from 'next/link'
 import DefaultErrorPage from 'next/error'
 import { getProjects, getProjectBySlug } from 'pages/api/projects'
 import { getProjectTypesBySlugs } from 'pages/api/project-types'
+import { trimPublic } from 'lib/helpers'
 import MetaHead from 'components/MetaHead'
 import HeaderBanner from 'components/HeaderBanner'
 import Window from 'components/Window'
@@ -41,6 +42,13 @@ export default function Project({ project, types }) {
       </HeaderBanner>
       <div className="px-wrap py-24 relative">
         <div className="absolute top-0 left-0 w-full h-full pattern-cross-dots-md text-tan z-0 opacity-30" aria-hidden="true" />
+        {project.windows && (
+          <div className="grid mb-12 gap-12 lg:grid-cols-2">
+            <Window fade="left">
+              <img src={trimPublic(project.windows)} alt={project.title} className="w-full h-auto" />
+            </Window>
+          </div>
+        )}
         <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} className="relative z-10">
           <div className="entry-content" dangerouslySetInnerHTML={{__html: project.content}} />
         </ScrollAnimation>

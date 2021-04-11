@@ -105,6 +105,22 @@ collections:
         search_fields: ['title', 'slug']
         value_field: '{{slug}}'
         display_fields: ['title', 'slug']
+      - name: 'windows'
+        label: 'Windows'
+        widget: 'relation'
+        collection: 'windows'
+        multiple: true
+        search_fields: ['title', 'slug']
+        value_field: '{{slug}}'
+        display_fields: ['title', 'slug']
+      - name: 'images'
+        label: 'Images'
+        widget: 'relation'
+        collection: 'project-imges'
+        multiple: true
+        search_fields: ['title', 'slug']
+        value_field: '{{slug}}'
+        display_fields: ['title', 'slug']
       - name: 'excerpt'
         label: 'Excerpt'
         widget: 'text'
@@ -129,9 +145,6 @@ collections:
         widget: 'image'
         required: false
         media_folder: '/public/images/projects/{{slug}}'
-        media_library:
-          config:
-            multiple: true
       - name: 'body'
         label: 'Body'
         widget: 'markdown'
@@ -175,7 +188,7 @@ collections:
   - name: 'experiences'
     label: 'Experiences'
     label_singular: 'Experience'
-    folder: '_content/experiencess'
+    folder: '_content/experiences'
     create: true
     delete: false
     preview_path: '/'
@@ -193,6 +206,42 @@ collections:
         label: 'End Year'
         widget: 'number'
         required: false
+      - name: 'body'
+        label: 'Body'
+        widget: 'markdown'
+  - name: 'windows'
+    label: 'Windows'
+    label_singular: 'Window'
+    folder: '_content/windows'
+    create: true
+    delete: false
+    preview_path: '/'
+    fields:
+      - name: 'title'
+        label: 'Name'
+        widget: 'string'
+      - name: 'image'
+        label: 'Image'
+        widget: 'image'
+        media_folder: '/public/images/windows/{{slug}}'
+      - name: 'body'
+        label: 'Body'
+        widget: 'markdown'
+  - name: 'project-images'
+    label: 'Project Images'
+    label_singular: 'Project Image'
+    folder: '_content/project-images'
+    create: true
+    delete: false
+    preview_path: '/'
+    fields:
+      - name: 'title'
+        label: 'Name'
+        widget: 'string'
+      - name: 'image'
+        label: 'Image'
+        widget: 'image'
+        media_folder: '/public/images/project-images/{{slug}}'
       - name: 'body'
         label: 'Body'
         widget: 'markdown'

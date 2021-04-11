@@ -7,7 +7,6 @@ types:
 excerpt: The Military College of South Carolina
 color: "#3975b7"
 thumbnail: /images/projects/the-citadel/citadel-mockup.jpg
-windows: /public/images/projects/the-citadel/our-mighty-citadel.jpg
 ---
 ## Background
 
