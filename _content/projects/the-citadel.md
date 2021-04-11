@@ -22,7 +22,9 @@ One of my first big projects at The Citadel was to create a newsroom website for
 
 ## Brand Guidelines Website
 
-As part of a college-wide brand redesign spearheaded by my teammate, I helped create a brand guidelines website. Before my teammate started at The Citadel, there were no guidelines for using the college's brand, which caused a plethora of issues. To complement the launch of the new brand, I designed and developed a website for use by internal and external stakeholders to 
+As part of a college-wide brand redesign spearheaded by my teammate, I helped create a brand guidelines website. Before my teammate started at The Citadel, there were no guidelines for using the college's brand, which caused a plethora of issues. To complement the launch of the new brand, I designed and developed a website for use by internal and external stakeholders to show how to properly utilize the new brand.
+
+A major component of this project was the generators that I developed. These generators helped internal stakeholders to create properly branded components that are used daily. Some of the key ones were the marketing lockup generator, the business card generator, and the email signature generator. These helped the college maintain brand consistency across the organization. The business card generator even automatically submits to be printed by the college's printing partner.
 
 ## Our Mighty Citadel - Brand Campaign
 
