@@ -15,7 +15,6 @@ images:
   - spencer-wedding-prints-02
   - spencer-wedding-prints-03
 ---
-
 ## Goals and Objectives
 
 The objective for this project was to create each requested product in a manner that meets the specific timelines required in the wedding industry.
@@ -23,3 +22,7 @@ The objective for this project was to create each requested product in a manner 
 ## Creative Strategy
 
 I created a brand for the Spencers, including a logo, color scheme, and typography, which formed a strategy that could be used across many different mediums.
+
+## Technologies Used
+
+WordPress, Figma, Illustrator, InDesign, Photoshop
