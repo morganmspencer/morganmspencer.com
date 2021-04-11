@@ -1,4 +1,4 @@
-import { getWindowBySlug } from 'pages/api/window'
+import { getWindowBySlug } from 'pages/api/windows'
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
