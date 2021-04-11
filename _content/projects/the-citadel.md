@@ -21,7 +21,7 @@ One of my first big projects at The Citadel was to create a newsroom website for
 
 ## Brand Guidelines Website
 
-Text
+As part of a college-wide brand redesign spearheaded by my teammate, I helped create a brand guidelines website. Before my teammate started at The Citadel, there were no guidelines for using the college's brand, which caused a plethora of issues. To complement the launch of the new brand, I designed and developed a website for use by internal and external stakeholders to 
 
 ## Our Mighty Citadel - Brand Campaign
 
