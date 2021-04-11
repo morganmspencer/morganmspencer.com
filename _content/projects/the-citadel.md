@@ -28,11 +28,23 @@ A major component of this project was the generators that I developed. These gen
 
 ## Our Mighty Citadel - Brand Campaign
 
-Text
+The Citadel runs a new brand campaign every few years to drive awareness to the college, the latest one being the Our Mighty Citadel campaign. This campaign features videos and stories of remarkable students, faculty, staff, and graduates. Of course, we needed somewhere to house all this content, so I developed a campaign microsite. This included a main landing page and pages for each individual story. Additionally, I added some calls to action to drive traffic to our main website and provide key information about the college.
 
 ## Main Website Conversion
 
-Text
+My main project during my time at The Citadel has been the transition of our main website. When I started at The Citadel, I identified several key issues with the current setup: 
+
+* The website was a single large legacy Joomla website that was very outdated and consistently patched
+* It was hosted on the college's own servers on-premises creating a single point of failure
+* There were no development workflows causing the website code to be edited directly
+* The editor experience was very difficult for general users to utilize
+* There was no automation causing duplicate and outdated content
+
+I immediately began to work on fixes for all the identified problems, eventually leading to the procurement of a cloud-hosting WordPress website. The website is kept consistently up to date to avoid security vulnerabilities. Being cloud-hosted created redundancy and backups to ensure maximum uptime. This also came with development workflows to properly develop, test, and publish code changes. The current version of WordPress gives the content editors a flexible but simple editing experience.
+
+The biggest effort for this process involved completely redesigning and rebuilding our website from the ground up in WordPress. I accomplished this task on my own and laid the groundwork for more features and additions in the future.
+
+Finally, one of the biggest fixes was the automation of key areas of the college's website. Our program and degree pages are created once and then aggregated in the appropriate areas on the website, such as the program listing for the individual school and the college as a whole. The same goes for faculty and staff pages where each person has a single page that can be pulled into other areas of the website. On the previous website, there was duplicate content that lived in several different areas. This was resolved in the new website.
 
 ## Technologies Used
 
