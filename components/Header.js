@@ -11,6 +11,12 @@ export default function Header() {
 
   const dark = ['/portfolio/[project]', '/contact']
 
+  const handleClick = (e) => {
+    e.preventDefault()
+    setMenuOpen(false)
+    router.push(e.target.getAttribute('href'))
+  }
+
   return (
     <header
       role="banner"
@@ -40,9 +46,9 @@ export default function Header() {
           Close
         </button>
         <ScrollAnimation animateIn="fadeInRight" offset={0} animateOnce={true} className="flex flex-col gap-6 text-3xl md:gap-2 md:flex-row md:text-base">
-          <Link href="/portfolio">Portfolio</Link>
-          <Link href="/learn">Learn</Link>
-          <Link href="/contact">Contact</Link>
+          <a href="/portfolio" onClick={handleClick}>Portfolio</a>
+          <a href="/learn" onClick={handleClick}>Learn</a>
+          <a href="/contact" onClick={handleClick}>Contact</a>
         </ScrollAnimation>
       </nav>
     </header>
