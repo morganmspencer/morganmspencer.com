@@ -14,3 +14,7 @@ windows:
 ## Background
 
 The Citadel Military College of South Carolina is where I have worked full-time over the past few years.
+
+## Technologies Used
+
+WordPress, Figma, Illustrator, Photoshop
