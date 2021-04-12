@@ -43,12 +43,12 @@ export default function MetaHead(props) {
       <meta property="og:locale" content="en_US" />
 			<meta property="og:image:type" content="image/png" />
 			<meta property="og:image:width" content="1200" />
-			<meta property="og:image:height" content="630" />
+			<meta property="og:image:height" content="627" />
       <meta property="og:image:alt" content={metaTitle} />
 			<meta name="twitter:image:alt" content={metaTitle} />
 
       <meta name="twitter:creator" content={`@` + blog.twitter} />
-			<meta name="twitter:site" content={blog.twitter} />
+			<meta name="twitter:site" content={`@` + blog.twitter} />
 			<meta name="twitter:card" content="summary_large_image" />
     </Head>
   )

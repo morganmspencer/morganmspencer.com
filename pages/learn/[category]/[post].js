@@ -11,7 +11,7 @@ export default function Post({ post, category, tags }) {
   return (
     <article className="py-24 px-wrap relative">
       <div className="absolute top-0 left-0 w-full h-full pattern-cross-dots-md text-tan z-0 opacity-30" aria-hidden="true" />
-      <MetaHead title={`${post.title}`} />
+      <MetaHead title={`${post.title}`} description={post.excerpt} image={post.thumbnail} type="article" />
       <header className="mb-8 relative z-10">
         <div className="mx-auto max-w-2xl">
           <ScrollAnimation animateIn="fadeInDown" animateOnce={true} delay={300} offset={0}>

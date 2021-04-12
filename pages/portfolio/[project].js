@@ -19,7 +19,12 @@ export default function Project({ project, types, windows, images }) {
 
   return (
     <article>
-      <MetaHead title={`${project.title}${blog.seo.sep}Portfolio`} description={project.excerpt} />
+      <MetaHead
+        title={`${project.title}${blog.seo.sep}Portfolio`}
+        description={project.excerpt}
+        image={project.thumbnail}
+        type="article"
+      />
       <HeaderBanner color={project.color} absolute={true}>
         <div className="flex flex-col lg:items-center justify-between lg:flex-row">
           <div className="flex-1 mb-12 lg:mb-0 lg:mr-12">
