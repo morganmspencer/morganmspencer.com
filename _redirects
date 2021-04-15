@@ -1,6 +1,6 @@
-/business/*         /learn/business/*
-/lifestyle/*        /learn/lifestyle/*
-/marketing/*        /learn/marketing/*
-/podcasting/*       /learn/podcasting/*
-/resources/*        /learn/resources/*
-/web-development/*  /learn/web-development/*
+/business/(.*)         /learn/business/$1
+/lifestyle/(.*)        /learn/lifestyle/$1
+/marketing/(.*)        /learn/marketing/$1
+/podcasting/(.*)       /learn/podcasting/$1
+/resources/(.*)        /learn/resources/$1
+/web-development/(.*)  /learn/web-development/$1
