@@ -1,7 +1,7 @@
 ---
 title: "Following Hashtags: Marketing with Instagram's Newest Feature"
 published_at: 2017-12-13-10-00
-category: business
+category: marketing
 tags:
   - hashtags
   - instagram
