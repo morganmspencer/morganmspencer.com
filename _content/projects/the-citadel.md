@@ -41,7 +41,7 @@ Each student had their own profile page, similar to a social network, that inclu
 
 ## It Takes Grit - Micro Campaign
 
-
+As we returned from the pandemic we decided to create a micro campaign to bolster brand awareness and compliment the return of the football season. We used the landing page as a conversion tool that people landed on after seeing our TV ad spots during the football games. It paired the hype video with information and calls-to-action to provide more information for interested visitors.
 
 ## Our Mighty Citadel - Brand Campaign
 
