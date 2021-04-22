@@ -11,6 +11,9 @@ windows:
   - our-mighty-citadel
   - the-citadel-today
   - the-citadel-brand-guidelines
+  - virtual-commencement
+  - the-citadel-magezine
+  - it-takes-grit-micro-campaign
 ---
 ## Background
 
