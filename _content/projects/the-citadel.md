@@ -11,9 +11,9 @@ windows:
   - our-mighty-citadel
   - the-citadel-today
   - the-citadel-brand-guidelines
-  - virtual-commencement
   - the-citadel-magazine
   - it-takes-grit-micro-campaign
+  - virtual-commencement
 ---
 ## Background
 
@@ -28,6 +28,20 @@ One of my first big projects at The Citadel was to create a newsroom website for
 As part of a college-wide brand redesign spearheaded by my teammate, I helped create a brand guidelines website. Before my teammate started at The Citadel, there were no guidelines for using the college's brand, which caused a plethora of issues. To complement the launch of the new brand, I designed and developed a website for use by internal and external stakeholders to show how to properly utilize the new brand.
 
 A major component of this project was the generators that I developed. These generators helped internal stakeholders to create properly branded components that are used daily. Some of the key ones were the marketing lockup generator, the business card generator, and the email signature generator. These helped the college maintain brand consistency across the organization. The business card generator even automatically submits to be printed by the college's printing partner.
+
+## The Citadel Magazine
+
+The Citadel Magazine is an annual publication that showcases inspirational stories from students, faculty, and alumni. The magazine has been around for decades, but I had the privilege of creating the first digital website experience for it. I created a digital magazine that showcased the articles in an easy to read and easy to navigate format. The three main feature stories were given their own individual spreads with custom styling. The website was hugely successful, bringing an overwhelming amount of traffic and praise.
+
+## Virtual Commencement
+
+The COVID-19 pandemic forced us to make quick changes to our 2020 commencement ceremony by moving it entirely online. I created the commencement website that included a livestream, separate sections for undergraduate and graduate, faculty submitted messages, and student profiles.
+
+Each student had their own profile page, similar to a social network, that included a profile picture, their graduation information, an audio track announcing their graduation, a thank you video they could submit, a quote, and a comments section where family, friends, and professors could leave personal congratulatory messages. The website had over 70,000 page views in two days and over 6,000 messages to graduates.
+
+## It Takes Grit - Micro Campaign
+
+As we returned from the pandemic we decided to create a micro campaign to bolster brand awareness and compliment the return of the football season. We used the landing page as a conversion tool that people landed on after seeing our TV ad spots during the football games. It paired the hype video with information and calls-to-action to provide more information for interested visitors.
 
 ## Our Mighty Citadel - Brand Campaign
 
