@@ -1,4 +1,4 @@
 ---
 title: The Citadel Magazine
-image: /public/images/windows/magazine.png
+image: /public/images/windows/magazine.jpg
 ---

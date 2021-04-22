@@ -1,4 +1,4 @@
 ---
 title: Virtual Commencement
-image: /public/images/windows/commencement.png
+image: /public/images/windows/commencement.jpg
 ---
