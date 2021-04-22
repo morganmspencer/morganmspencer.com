@@ -12,7 +12,7 @@ windows:
   - the-citadel-today
   - the-citadel-brand-guidelines
   - virtual-commencement
-  - the-citadel-magezine
+  - the-citadel-magazine
   - it-takes-grit-micro-campaign
 ---
 ## Background
@@ -35,7 +35,7 @@ The Citadel runs a new brand campaign every few years to drive awareness to the 
 
 ## Main Website Conversion
 
-My main project during my time at The Citadel has been the transition of our main website. When I started at The Citadel, I identified several key issues with the current setup: 
+My main project during my time at The Citadel has been the transition of our main website. When I started at The Citadel, I identified several key issues with the current setup:
 
 * The website was a single large legacy Joomla website that was very outdated and consistently patched
 * It was hosted on the college's own servers on-premises creating a single point of failure
