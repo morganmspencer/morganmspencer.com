@@ -60,26 +60,26 @@ export default function Home({ experiences, educations, projects, types }) {
           </ScrollAnimation>
           <div className="mt-12 md:mt-0 md:ml-12">
             <div className="flex items-center md:justify-end mb-1">
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                 <a href="https://twitter.com/morganmspencer" target="_blank" rel="noopener noreferrer" className="block text-3xl md:text-5xl mr-2 md:mr-4">
                   <RiTwitterFill />
                   <span className="sr-only">Twitter</span>
                 </a>
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={600}>
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={200}>
                 <a href="https://github.com/morganmspencer" target="_blank" rel="noopener noreferrer" className="block text-3xl mr-3 md:text-5xl">
                   <RiGithubFill />
                   <span className="sr-only">GitHub</span>
                 </a>
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={900}>
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={400}>
                 <a href="https://www.linkedin.com/in/morganmspencer/" target="_blank" rel="noopener noreferrer" className="block text-3xl md:text-5xl">
                   <RiLinkedinFill />
                   <span className="sr-only">LinkedIn</span>
                 </a>
               </ScrollAnimation>
             </div>
-            <ScrollAnimation animateIn="fadeInRight" animateOnce={true} delay={900}>
+            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
               <p className="text-2xl md:text-3xl">@morganmspencer</p>
             </ScrollAnimation>
           </div>
