@@ -5,6 +5,7 @@ import { getProjects } from 'pages/api/projects'
 import { getProjectTypes } from 'pages/api/project-types'
 import MetaHead from 'components/MetaHead'
 import ProjectItem from 'components/ProjectItem'
+import Initiative from 'components/Initiative'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { RiArrowRightLine, RiTwitterFill, RiGithubFill, RiLinkedinFill } from 'react-icons/ri'
 const blog = require('nmbs.config.json')
@@ -30,6 +31,36 @@ export default function Home({ experiences, educations, projects, types }) {
       <section className="py-24 px-wrap min-h-screen-3/4 relative">
         <div className="absolute top-0 left-0 w-full h-full pattern-cross-dots-md text-tan z-0 opacity-30" aria-hidden="true" />
         <div className="relative z-10">
+          <div>
+            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
+              <h2 className="heading-underline">Current Initiatives</h2>
+            </ScrollAnimation>
+            <div className="mb-12 -mt-12 -mx-12 flex flex-wrap items-start justify-center">
+              <Initiative
+                title="The Citadel"
+                subtitle="Working at..."
+                link="https://citadel.edu"
+                image="/images/initiatives/citadel.svg"
+                bg="#3975b7"
+              />
+              <Initiative
+                title="Tape"
+                subtitle="Helping with..."
+                link="https://tape.sh"
+                image="/images/initiatives/tape.svg"
+                bg="#F6F8FB"
+                delay={500}
+              />
+              <Initiative
+                title="RedwoodJS"
+                subtitle="Contributing to..."
+                link="https://redwoodjs.com"
+                image="/images/initiatives/redwood.svg"
+                bg="#fdf8f6"
+                delay={600}
+              />
+            </div>
+          </div>
           <div className="flex flex-wrap items-center justify-between">
             <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
               <h2 className="heading-underline">Portfolio</h2>

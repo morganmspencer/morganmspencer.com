@@ -37,7 +37,7 @@ module.exports = {
   variants: {
     extend: {
       opacity: ['group-hover', 'group-focus'],
-      padding: ['group-hover', 'group-focus'],
+      padding: ['group-hover', 'group-focus', 'hover', 'focus'],
     },
   },
   plugins: [
